@@ -18,6 +18,6 @@ class Store extends Model
 
     public function books(): BelongsToMany
     {
-        return $this->belongsToMany(Book::class);
+        return $this->belongsToMany(Book::class, 'stores_books', 'store_id', 'book_id');
     }
 }
