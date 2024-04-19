@@ -17,11 +17,13 @@ return new class extends Migration
 
             $table->foreign('book_id')
                 ->references('id')
-                ->on('books');
+                ->on('books')
+                ->onDelete('cascade');
 
             $table->foreign('store_id')
                 ->references('id')
-                ->on('stores');
+                ->on('stores')
+                ->onDelete('cascade');
 
             $table->primary(['store_id', 'book_id']);
             $table->timestamps();
