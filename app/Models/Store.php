@@ -20,4 +20,19 @@ class Store extends Model
     {
         return $this->belongsToMany(Book::class, 'stores_books', 'store_id', 'book_id');
     }
+
+    public function store($data) 
+    {
+        $instance = $this->newInstance($data);
+        $instance->save();
+        
+        return $instance;
+    }
+
+    public function updateStore($store, $data) {
+        $store->fill($data);
+        $store->save();
+        
+        return $store;
+    }
 }
