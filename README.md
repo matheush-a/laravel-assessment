@@ -1,3 +1,51 @@
+>Do not copy, project developed by Matheus Almeida
+
+## Requirements
+
+- PHP 8.3.4
+- Composer
+- MySQL
+
+## Installation
+
+Follow the steps in order to install the project:
+
+1. Clone repository:
+
+    ```bash
+    git clone https://github.com/matheush-a/coodesh-full-stack.git
+    ```
+   
+ 2. Install dependencies
+ 
+    ```bash
+    composer install
+    ```
+    
+3. Setup .env file according to your local settings
+
+4. Generate app key
+
+    ```bash
+    php artisan key:generate
+    ```
+    
+5. Run migrations
+
+    ```bash
+    php artisan migrate
+    ```
+    
+8. Run server
+
+    ```bash
+    php artisan serve
+    ```
+    
+After running server you should be able to access API at http://localhost:8000/
+
+##
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
